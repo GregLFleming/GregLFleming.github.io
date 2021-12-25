@@ -79,7 +79,9 @@ input, select, textarea {
 		font-size: 65px;
 		margin-top: 10px;
 		margin-left: 10px;
+		color: rgb(17, 182, 17) !important; 
 }
+
 #project-header{
 	display: flex;
 	justify-content: center;
