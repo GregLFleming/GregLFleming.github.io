@@ -9,7 +9,13 @@
 		<title>Greg Fleming</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta property="og:title" content="Greg Fleming - Software Engineer" />
+		<meta property="og:image" content="images/profile_picture.jpg" />
+		<meta property="og:description"
+			content="Full Stack Software Engineer Quality, Reliability, Integrity." />
+		<link rel="icon" type="image/png" href="images/hoj_logo.png">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
@@ -27,10 +33,10 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Skills</a></li>
-											<li><a href="elements.html">Projects</a></li>
-											<li><a href="#">About me</a></li>
-											<li><a href="#">Contact</a></li>
+											<li><a href="#one">Skills</a></li>
+											<li><a href="#two">Projects</a></li>
+											<li><a href="#cta">About Me</a></li>
+											<li><a href="#footer">Contact</a></li>
 										</ul>
 									</div>
 								</li>
@@ -40,14 +46,24 @@
 
 				<!-- Banner -->
 					<section id="banner">
-						<div class="inner">
-							<h2>Spectral</h2>
-							<p>Another fine responsive<br />
-							site template freebie<br />
-							crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button primary">Activate</a></li>
-							</ul>
+						<div class="inner">	
+							<div class="inner-banner">
+								<img class="profile-pic"src="images/profile_picture.jpg" alt="">
+								<div>
+									<h2>Greg Fleming</h2>
+									<p>
+										Full Stack <br/>
+										Software Engineer<br/> 
+										Quality<br/>
+										Reliability <br/>
+										Integrity
+									</p>
+									<ul class="actions special">
+										<li><a href="hojung_cha_resume.pdf" target="_blank" class="button primary">Resume</a></li>
+										<li><a href="#footer" class="button primary">Contact</a></li>
+									</ul>
+								</div>
+							</div>						
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
 					</section>
@@ -56,104 +72,226 @@
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>Skills<br />
+								</h2>
 							</header>
 							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-ruby-plain-wordmark colored"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-rails-plain-wordmark colored"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-react-original-wordmark colored"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-redux-original colored"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-javascript-plain colored javascript"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-mongodb-plain-wordmark colored"></i>
+									</span>
+								</li>
+							</ul>
+							<ul class="icons major">
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-express-original-wordmark"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-jquery-plain-wordmark colored"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-postgresql-plain-wordmark colored"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-html5-plain-wordmark colored"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-css3-plain-wordmark colored"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-sass-original colored"></i>
+									</span>
+								</li>
+							</ul>
+							<ul class="icons major">
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-nodejs-plain-wordmark colored" alt="Node.js"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-git-plain-wordmark colored"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-heroku-plain-wordmark colored"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-amazonwebservices-plain-wordmark colored"></i>
+									</span>
+								</li>
+								<li>
+									<span id="webpack-cube" class="icon major">
+										<i class="dev-i devicon-webpack-plain colored"></i>
+									</span>
+								</li>
+								<li>
+									<span class="icon major">
+										<i class="dev-i devicon-matlab-plain colored"></i>
+									</span>
+								</li>
 							</ul>
 						</div>
 					</section>
 
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
+						<header id="project-header"class="major">
+							<h2 class="project-title">Projects</h2>
+						</header>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div id="welp-main"class="image">
+								<div id="welp-modal" class="h">
+										<div class="link-box">
+											<h2>Welp</h2>
+											<a href="https://welp-aa.herokuapp.com/#/" target="_blank">
+												<i class="fas fa-link"></i>
+											</a>
+											<a class="right-link"href="https://github.com/hoj0210/Welp" target="_blank">
+												<i class="fab fa-github"></i>
+											</a>
+										</div>	
+								</div>
+								<img class="image-gif" src="images/welp_gif.gif" alt="" />
+							</div>
+							<div class="content">
+								<h2><a href="https://welp-aa.herokuapp.com/#/" target="_blank">Welp<br /></a></h2>
+								<i>Ruby on Rails, React, Redux, HTML5, PostgreSQL, CSS3, AWS, Heroku, Webpack</i>
+								<p class="p-italics">A Yelp clone that serves as a platform for users to seamlessly search through various businesses and interface with features such
+								as reviews and ratings.</p>
+							</div>
+							
+						</section>
+						<section class="spotlight">
+							<div id="space-main"class="image">
+								<div id="space-modal" class="h">
+									<div class="link-box">
+										<h2>Space Escape</h2>
+										<div>
+											<a href="https://hoj0210.github.io/space_escape/" target="_blank">
+												<i class="fas fa-link"></i>
+											</a>
+											<a class="right-link"href="https://github.com/hoj0210/space_escape" target="_blank">
+												<i class="fab fa-github"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<img class="image-gif" src="images/space_escape_gif.gif" alt="" />
+							</div>
+							<div class="content">
+								<h2><a href="https://hoj0210.github.io/space_escape/" target="_blank">Space Escape<br /></a></h2>
+								<i>Javascript, Tone.js, Canvas</i>
+								<p class="p-italics">A Javascript game where users must press the right key at the right time to hit notes and destroy spaceships.</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div id="fit-main"class="image">
+								<div id="fit-modal" class="h">
+									<div class="link-box">
+										<h2>Fit 2 Me</h2>
+										<div>
+											<a href="https://fit2me.herokuapp.com/#/" target="_blank">
+												<i class="fas fa-link"></i>
+											</a>
+											<a class="right-link"href="https://github.com/gigimscarborough/Fit2Me" target="_blank">
+												<i class="fab fa-github"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<img class="image-gif" src="images/fit2me_second.gif" alt="" />
 							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="content">
+								<h2><a href="https://fit2me.herokuapp.com/#/" target="_blank">Fit2Me<br /></a></h2>
+								<i>MongoDB, Mongoose, Express.js, React / Redux, Node.js</i>
+								<p class="p-italics">A MERN stack project that aids fitness-seeking users to find their personal trainers online, reserve workout sessions,
+								and leave reviews of the trainers.</p>
 							</div>
 						</section>
 					</section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-headphones-alt">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
-						</div>
-					</section>
 
 				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
+					<section id="cta" class="wrapper style4" style="padding-top: 0;">
+						<header id="about-header" class="major">
+									<h2 class="project-title">About Me</h2>
+						</header>
 						<div class="inner">
+							<div>	
+								<div class="about-resume">
+									<a href="hojung_cha_resume.pdf" target="_blank" class="button primary">Resume</a>
+								</div>				
+								<p>Thank you for checking my portfolio! I am a software engineer with experience in building web
+								applications with UI, who always finds zeal in debugging errors and finding more efficient approach to problems.</p>
+								<p>I graduated from App Academy, a highly selective software engineer program, where I spent more than
+								100 hours per week learning and mastering my skills in different technologies and computer languages. Though
+								challenging, it invigorated my passion for problem solving and the desire to keep learning and building my knowledge to
+								become the most optimal problem-solver as a programmer. And I am looking for an opportunity to keep this flame going.</p>
+								<p>When I am not coding, I love to indulge myself with mind-boggling films, go on adventurous hikes to various mountainous terrains, and discover new restaurants that awaken my palate. </p>
+							</div>
+						</div>
+						<div id="links"class="inner">
 							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+								<h2>Links</h2>
+								<p>If you have read this far, we may as well connect!</p>
 							</header>
 							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
+								<li><a href="https://www.linkedin.com/in/hojung-cha-4b613b206/" class="button fit primary" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn </a></li>
+								<li><a href="https://angel.co/u/hojung-cha" class="button fit primary" target="_blank"><i class="fab fa-angellist"></i>AngelList</a></li>
+								<li><a href="https://github.com/hoj0210" class="button fit primary" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
 							</ul>
 						</div>
 					</section>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+						<h2>Contact</h2>
+						<div class="contact-me">
+							<p><i class="fas fa-phone"></i> (949)702-0026</p>
+							<p><i class="fas fa-envelope"></i> hoj0210@gmail.com</p>
+						</div>
+						
 						<ul class="copyright">
 							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
