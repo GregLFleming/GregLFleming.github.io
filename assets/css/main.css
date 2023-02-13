@@ -88,7 +88,13 @@ input, select, textarea {
 	margin-bottom: 0;
 	background-color: #292F35;
 }
-
+.send-email{
+	margin: auto;
+	width: 50%;
+}
+.input-box{
+	margin: 25px;
+}
 .link-box{
 	position: relative;
 	top: 117px;
@@ -3593,7 +3599,6 @@ input, select, textarea {
 			position: absolute;
 			right: 0;
 			top: 0;
-			vertical-align: middle;
 			width: 7em;
 		}
 

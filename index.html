@@ -80,12 +80,7 @@
 					</li>
 					<li>
 						<span class="icon major">
-							<i class="dev-i devicon-mysql-plain-wordmark colored"></i>
-						</span>
-					</li>
-					<li>
-						<span class="icon major">
-							<i class="dev-i devicon-flask-original-wordmark colored"></i>
+							<i class="dev-i devicon-java-plain-wordmark colored"></i>
 						</span>
 					</li>
 					<li>
@@ -95,11 +90,21 @@
 					</li>
 					<li>
 						<span class="icon major">
-							<i class="dev-i devicon-html5-plain-wordmark colored"></i>
+							<i class="dev-i devicon-mysql-plain-wordmark colored"></i>
+						</span>
+					</li>
+					<li>
+						<span class="icon major">
+							<i class="dev-i devicon-cplusplus-plain-wordmark colored"></i>
 						</span>
 					</li>
 				</ul>
 				<ul class="icons major">
+					<li>
+						<span class="icon major">
+							<i class="dev-i devicon-html5-plain-wordmark colored"></i>
+						</span>
+					</li>
 					<li>
 						<span class="icon major">
 							<i class="dev-i devicon-css3-plain-wordmark colored"></i>
@@ -107,12 +112,61 @@
 					</li>
 					<li>
 						<span class="icon major">
-							<i class="dev-i devicon-bootstrap-plain-wordmark colored"></i>
+							<i class="dev-i devicon-spring-plain-wordmark colored"></i>
 						</span>
 					</li>
 					<li>
 						<span class="icon major">
-							<i class="dev-i devicon-cplusplus-plain-wordmark colored"></i>
+							<i class="dev-i devicon-flask-original-wordmark colored"></i>
+						</span>
+					</li>
+					<li>
+						<span class="icon major">
+							<i class="dev-i devicon-react-original-wordmark colored"></i>
+						</span>
+					</li>
+				</ul>
+				<ul class="icons major">
+					<li>
+						<span class="icon major">
+							<i class="dev-i devicon-redux-original colored"></i>
+						</span>
+					</li>
+					<li>
+						<span class="icon major">
+							<i class="dev-i devicon-postgresql-plain-wordmark colored"></i>
+						</span>
+					</li>
+					<li>
+						<span class="icon major">
+							<i class="dev-i devicon-nodejs-plain-wordmark colored"></i>
+						</span>
+					</li>
+					<li>
+						<span class="icon major">
+							<i class="dev-i devicon-babel-plain colored"></i>
+						</span>
+					</li>
+					<li>
+						<span class="icon major">
+							<i class="dev-i devicon-jquery-plain-wordmark colored"></i>
+						</span>
+					</li>
+				</ul>
+				<ul class="icons major">
+					<li>
+						<span class="icon major">
+							<i class="dev-i devicon-git-plain-wordmark colored"></i>
+						</span>
+					</li>
+					<li>
+						<span class="icon major">
+							<i class="dev-i devicon-npm-original-wordmark colored"></i>
+						</span>
+					</li>
+					<li>
+						<span class="icon major">
+							<i class="dev-i devicon-bootstrap-plain-wordmark colored"></i>
 						</span>
 					</li>
 					<li>
@@ -123,33 +177,6 @@
 					<li>
 						<span class="icon major">
 							<i class="dev-i devicon-arduino-plain-wordmark colored"></i>
-						</span>
-					</li>
-				</ul>
-				<ul class="icons major">
-					<li>
-						<span class="icon major">
-							<i class="dev-i devicon-jquery-plain-wordmark colored"></i>
-						</span>
-					</li>
-					<li>
-						<span class="icon major">
-							<i class="dev-i devicon-git-plain-wordmark colored"></i>
-						</span>
-					</li>
-					<li>
-						<span class="icon major">
-							<i class="dev-i devicon-matlab-plain colored"></i>
-						</span>
-					</li>
-					<li>
-						<span id="webpack-cube" class="icon major">
-							<i class="dev-i devicon-ssh-original-wordmark colored"></i>
-						</span>
-					</li>
-					<li>
-						<span class="icon major">
-							<i class="dev-i devicon-ubuntu-plain-wordmark colored"></i>
 						</span>
 					</li>
 				</ul>
@@ -300,6 +327,14 @@
 		<!-- Footer -->
 		<footer id="footer">
 			<h2>Contact</h2>
+			<div class = "send-email">
+				<form class = "input-box" action="http://formspree.io/gfleming223@gmail.com" method="POST">
+					<input type="text" class = "input-box" placeholder="Full Name">
+					<input type="email" name="_replyto" class = "input-box" placeholder="Email">
+					<textarea name="body" class = "input-box" placeholder="Message"></textarea>
+					<input type="submit" class="button primary" value="Send">
+				</form>
+			</div>
 			<div class="contact-me">
 				<p><i class="fas fa-phone"></i> (559) 776-1713</p>
 				<p><i class="fas fa-envelope"></i> gfleming223@gmail.com</p>
@@ -324,7 +359,7 @@
 
 </body>
 <script>
-	setDataFromGithub = ({avatar_url, bio}) => {
+	setDataFromGithub = ({ avatar_url, bio }) => {
 		//Set profile pic
 		$('.profile-pic')[0].src = avatar_url;
 
@@ -334,10 +369,8 @@
 
 	//fetch user data from github, then call set function
 	fetch('https://api.github.com/users/GregLFleming')
-		.then(res => res.json()) 
+		.then(res => res.json())
 		.then(data => { setDataFromGithub(data); });
-
-	
 </script>
 
 </html>
