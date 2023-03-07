@@ -333,7 +333,7 @@
 			  </form> -->
 
 			<h2>Contact</h2>
-			<div class="send-email">
+			<!-- <div class="send-email">
 				<form class="input-box" action="https://formspree.io/f/mjvdylwb" method="POST">
 					<fieldset id="fs-frm-inputs">
 						<input type="text" name="name" class="input-box" placeholder="Full Name">
@@ -343,7 +343,7 @@
 					</fieldset>
 					<input type="submit" class="button primary" value="Send">
 				</form>
-			</div>
+			</div> -->
 
 			<div class="contact-me">
 				<p><i class="fas fa-phone"></i> (559) 776-1713</p>
@@ -369,18 +369,18 @@
 
 </body>
 <script>
-	setDataFromGithub = ({ avatar_url, bio }) => {
-		//Set profile pic
-		$('.profile-pic')[0].src = avatar_url;
+	// setDataFromGithub = ({ avatar_url, bio }) => {
+	// 	//Set profile pic
+	// 	$('.profile-pic')[0].src = avatar_url;
 
-		//Set bio info
-		$('#bio')[0].innerHTML = bio.split('\r\n').map(line => line + '<br/>').join("<br>");
-	}
+	// 	//Set bio info
+	// 	$('#bio')[0].innerHTML = bio.split('\r\n').map(line => line + '<br/>').join("<br>");
+	// }
 
-	//fetch user data from github, then call set function
-	fetch('https://api.github.com/users/GregLFleming')
-		.then(res => res.json())
-		.then(data => { setDataFromGithub(data); });
+	// //fetch user data from github, then call set function
+	// fetch('https://api.github.com/users/GregLFleming')
+	// 	.then(res => res.json())
+	// 	.then(data => { setDataFromGithub(data); });
 
 	//Send an email from the person who filled out the form to myself
 	// fetch('https://api.github.com/users/GregLFleming')
